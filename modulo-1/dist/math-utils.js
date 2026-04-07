@@ -21,4 +21,3 @@ export function calcularMediana(datos) {
 export function filtrarAtipicos(datos, limite) {
     return datos.filter((n) => Math.abs(n) <= limite);
 }
-//# sourceMappingURL=math-utils.js.map

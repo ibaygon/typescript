@@ -1,16 +1,10 @@
 import { calcularMedia, calcularMediana, filtrarAtipicos } from "./math-utils.js";
-
 const datos = [10, 20, 30, 1000];
-const datosVacios: number[] = [];
+const datosVacios = [];
 const limite = 100;
-
 console.log("Datos:", datos);
-
 console.log("Media:", calcularMedia(datos));
 console.log("Media (array vacío):", calcularMedia(datosVacios));
-
 console.log("Mediana:", calcularMediana(datos));
 console.log("Mediana (array vacío):", calcularMediana(datosVacios));
-
 console.log(`Filtrados con límite ${limite}:`, filtrarAtipicos(datos, limite));
-
