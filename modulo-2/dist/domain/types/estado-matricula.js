@@ -8,7 +8,7 @@ export function generarReporte(estado) {
             return `Matrícula finalizada con nota media ${estado.notaMedia}.`;
         default: {
             const _exhaustivo = estado;
-            return _exhaustivo;
+            throw new Error(`Estado no manejado: ${_exhaustivo}`);
         }
     }
 }
